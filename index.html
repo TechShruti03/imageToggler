@@ -11,24 +11,72 @@
             margin-top: 150px;
         }
         
-        .btn
-        {
+        .btn {
             width: 100px;
             height: 35px;
-          border: none;
-          border-radius: 30px;
-          font-size: 15px;
-          background-color: aquamarine;
-          margin-left: 70px;
-          padding: 5px;
+            border: none;
+            border-radius: 30px;
+            font-size: 15px;
+            background-color: aquamarine;
+            margin-left: 70px;
+            padding: 5px;
         }
-        .heading{
+
+        .heading {
             color: #b300b3;
             font-size: 40px;
-            margin-left:50px ;
+            margin-left: 50px;
         }
-        .img{
+
+        .img {
             height: 250px;
+        }
+
+        /* Media Query for screens with a width less than 768px */
+        @media (max-width: 768px) {
+            .body {
+                margin-left: 20px; /* Adjust margin for smaller screens */
+                margin-top: 50px;  /* Adjust margin for smaller screens */
+            }
+
+            .btn {
+                width: 80px; /* Make buttons smaller */
+                height: 30px; /* Adjust button height */
+                font-size: 14px; /* Reduce font size */
+                margin-left: 20px; /* Adjust margin for buttons */
+            }
+
+            .heading {
+                font-size: 30px; /* Reduce heading font size */
+                margin-left: 20px; /* Adjust margin for smaller screens */
+            }
+
+            .img {
+                height: 200px; /* Make image smaller */
+            }
+        }
+
+        /* Media Query for screens with a width less than 480px (e.g., mobile screens) */
+        @media (max-width: 480px) {
+            .body {
+                margin-left: 10px; /* Further adjust margin */
+                margin-top: 20px;  /* Further adjust margin */
+            }
+
+            .btn {
+                width: 70px; /* Further reduce button size */
+                height: 25px; /* Further reduce button height */
+                font-size: 12px; /* Further reduce font size */
+            }
+
+            .heading {
+                font-size: 24px; /* Further reduce heading font size */
+                margin-left: 10px; /* Adjust margin */
+            }
+
+            .img {
+                height: 180px; /* Make image smaller */
+            }
         }
     </style>
 </head>
