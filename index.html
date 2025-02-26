@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Toggler</title>
+    <style>
+        .body{
+            background-color: antiquewhite;
+            margin-left: 470px;
+            margin-top: 150px;
+        }
+        
+        .btn
+        {
+            width: 100px;
+            height: 35px;
+          border: none;
+          border-radius: 30px;
+          font-size: 15px;
+          background-color: aquamarine;
+          margin-left: 70px;
+          padding: 5px;
+        }
+        .heading{
+            color: #b300b3;
+            font-size: 40px;
+            margin-left:50px ;
+        }
+        .img{
+            height: 250px;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <h1 class="heading">Switch The Season</h1>
+    <img src="summer.jpeg" class="img" alt="off" id="season">
+    <br> <br>
+    <button class="btn" type="button"  onclick="rainy()">
+        See Rainy
+    </button>
+    <button class="btn" type="button"  onclick="winter()">
+        See Winter
+    </button>
+
+    <script>
+        const bulbElement = document.getElementById('season');
+        function rainy() {
+            bulbElement.src = "rainy.jpeg";
+        }
+        function winter() {
+            bulbElement.src = "winter.jpeg";
+        }
+    </script>
+</body>
+</html>
